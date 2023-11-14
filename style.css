@@ -1,0 +1,157 @@
+.nav-link{
+   margin:20px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-link1{
+    color:black;
+    text-align: center;
+    font-size: 15px;
+    margin-left:20px;
+    margin-right:20px;
+    font-weight: bold;
+    vertical-align: auto;
+}
+.bg-img{
+    width:100%;
+height:300px;
+
+background-size: cover;
+}
+.bg-img1{
+    width:100%;
+height:400px;
+margin-top:10px;
+background-size: cover;
+}
+.img-text {
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    padding: 20px; /* Padding for text */
+    color:rgb(255, 237, 215);
+    font-size: 80px; /* Font size */
+   font-family: 'Playpen Sans', cursive;
+   
+}
+.para{
+    margin:10px;
+    font-size: 18px;
+}
+
+.click-here{
+    color:rgb(13, 63, 133);
+    font-weight: bold;
+    text-decoration: none;
+}
+.line{
+    width: 200px;
+height: 2px;
+border: 2px solid rgb(255, 208, 0);
+margin: 0 auto;
+}
+.list{
+    font-size:20px;
+}
+.listing-items{
+    text-align: left;
+    margin:20px;
+}
+.copy_right_footer {
+    position: sticky;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(43, 57, 78);;
+    line-height: 3;
+    text-align: center;
+ }
+ .td-1, .td-2 {
+    border: 1px solid #C1C7D0;
+    padding: 7px 10px;
+    vertical-align: top;
+    text-align: left;
+    min-width: 8px;
+}
+.para-sectionsimportant{
+border: 1px solid grey;
+background: #f9f9f9;
+margin-bottom: 1rem;
+padding: 15px 12px 15px 35px;
+font-size: 13px;
+position: relative;
+}
+#menu-left_menu .menu-item a {
+    padding: 11px 30px 10px 26px;
+    border-bottom: 1px solid #e4e4e4;
+    display: block;
+    position: relative;
+    background: #fafafa;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+.container {
+    padding:15px;
+}
+.sidenav {
+    height:50%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    border:1px solid black;
+   font-weight:bold;
+    right:0;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+    padding-top: 20px;
+    
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+   transition:0.3s;
+  
+  }
+  .image-links .li-inner-images {
+    width: 100px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px gray;
+    height: 100px;
+}
+
+.li-inner-images {
+    width: 500px;
+    display: block;
+    margin: 21px 0;
+}
+  
+  /* On mouse-over */
+  .sidenav a:hover {
+    color: #000000;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sidenav {
+      width: 100%; /* Make the sidebar full width on small screens */
+    }
+  }
+  
+
+ 
+/* Responsive text style */
+@media (max-width: 768px) {
+    .img-text {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  
+}

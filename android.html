@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Student Template</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&family=Playpen+Sans:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+ 
+</head>
+<body style="background-color: white;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(43, 57, 78);">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#"><img src="images/iiit_logo_white.png" style="width:150px;height:80px;"></a>
+    <div class="collapse navbar-collapse text-center" id="myNavbar">
+        <ul class="navbar-nav menu mx-auto text-align:left">
+            <li class="nav-item"><a id="about-link" class="nav-link" style=" color:white;" href="index.html" >Faculty</a></li>
+            <li class="nav-item"><a id="research-link" class="nav-link" style=" color:white;" href="staff.html" >Staff</a></li>
+            <li class="nav-item"><a id="event-link" class="nav-link" style=" color:white;" href="student.html">Student</a></li>
+            <li class="nav-item"><a id="event-link" class="nav-link" style=" color:white;" href="student.html">policies</a></li>
+            <li class="nav-item"><a id="teaching-link" class="nav-link" style=" color:white;" href="#contact.html" >Contact</a></li>
+            <!--<li class="nav-item"><a id="talks-link" class="nav-link" href="#talks" >Moddle(LMS)</a></li>-->
+        </ul>
+            
+    </div>
+</nav>
+
+<div class="container">
+    <div class="content-container" style="margin-bottom:20px;margin:20px;">
+         <h2><span class="mw-headline" id="Setting_up_8021.X_for_Wireless_on_Smart_Phone_.28Android.29"></span>Setting up 8021.X for Wireless on Smart Phone (Android)</h2>
+        <p>Contributed By: <a rel="nofollow" class="click-here" href="mailto:nehal.wani@research.iiit.ac.in">Nehal J Wani</a>
+        </p>
+        <h3><span class="mw-headline" id="Installing_the_Radius_CA_Certificate"></span>Installing the Radius CA Certificate</h3>
+        <h4><span class="mw-headline" id="Method_1"></span>Method 1</h4>
+        <p>Visit <a rel="nofollow" class="click-here" href="http://radius.iiit.ac.in">http://radius.iiit.ac.in</a> and click on IIIT-H_RADIUS_CA.pem
+        </p><p><img alt="8021X ANDROID 1.png" src="andriod/600px-8021X_ANDROID_1.png" width="600" height="451" srcset="/wiki/upload/thumb/7/7d/8021X_ANDROID_1.png/900px-8021X_ANDROID_1.png 1.5x, /wiki/upload/7/7d/8021X_ANDROID_1.png 2x" /></a>
+        </p><p>Assign some name to this Certificate and make sure you remember it. Make sure you select Wifi in the second drop down. Then click on OK.
+        </p><p><img alt="8021X ANDROID 13.png" src="andriod/600px-8021X_ANDROID_13.png" width="600" height="1067" srcset="/wiki/upload/thumb/d/d4/8021X_ANDROID_13.png/900px-8021X_ANDROID_13.png 1.5x, /wiki/upload/d/d4/8021X_ANDROID_13.png 2x" /></a>
+        </p>
+        <h4><span class="mw-headline" id="Method_2"></span>Method 2</h4>
+        <p>Follow this only if Method 1 doesn't work for you.
+        </p><p>First, transfer the certificate: <a rel="nofollow" class="click-here" href="http://radius.iiit.ac.in/IIIT-H_RADIUS_CA.pem">http://radius.iiit.ac.in/IIIT-H_RADIUS_CA.pem</a> using some mechanism to the Android Phone. Then, navigate to Settings-&gt;Security
+        </p><p><img alt="8021X ANDROID 3.png" src="andriod/600px-8021X_ANDROID_3.png" width="600" height="1067" srcset="/wiki/upload/thumb/8/83/8021X_ANDROID_3.png/900px-8021X_ANDROID_3.png 1.5x, /wiki/upload/8/83/8021X_ANDROID_3.png 2x" /></a>
+        </p><p>Click on "Install From Storage"
+        </p><p><img alt="8021X ANDROID 4.png" src="andriod/600px-8021X_ANDROID_4.png" width="600" height="1067" srcset="/wiki/upload/thumb/9/95/8021X_ANDROID_4.png/900px-8021X_ANDROID_4.png 1.5x, /wiki/upload/9/95/8021X_ANDROID_4.png 2x" /></a>
+        </p><p>Then select "Internal Storage"
+        </p><p><img alt="8021X ANDROID 5.png" src="andriod/600px-8021X_ANDROID_5.png" width="600" height="1067" srcset="/wiki/upload/thumb/9/93/8021X_ANDROID_5.png/900px-8021X_ANDROID_5.png 1.5x, /wiki/upload/9/93/8021X_ANDROID_5.png 2x" /></a>
+        </p><p>Then navigate to the location where you kept the downloaded certificate.
+        </p><p><img alt="8021X ANDROID 6.png" src="andriod/600px-8021X_ANDROID_6.png" width="600" height="1067" srcset="/wiki/upload/thumb/6/66/8021X_ANDROID_6.png/900px-8021X_ANDROID_6.png 1.5x, /wiki/upload/6/66/8021X_ANDROID_6.png 2x" /></a>
+        </p><p>Select the previously downloaded CA certificate file.
+        </p><p><img alt="8021X ANDROID 7.png" src="andriod/600px-8021X_ANDROID_7.png" width="600" height="1067" srcset="/wiki/upload/thumb/8/88/8021X_ANDROID_7.png/900px-8021X_ANDROID_7.png 1.5x, /wiki/upload/8/88/8021X_ANDROID_7.png 2x" /></a>
+        </p><p>Assign some name to this Certificate and make sure you remember it. Make sure you select Wifi in the second drop down. Then click on OK.
+        </p><p><img alt="8021X ANDROID 8.png" src="andriod/600px-8021X_ANDROID_8.png" width="600" height="1067" srcset="/wiki/upload/thumb/f/f7/8021X_ANDROID_8.png/900px-8021X_ANDROID_8.png 1.5x, /wiki/upload/f/f7/8021X_ANDROID_8.png 2x" /></a>
+        </p><p>Android may warn you that we may monitor your network. But that is something that the sysadmins are not going to do, since this certificate is only required for transacting with the radius server, and your connections to the internet/intranet will not be using the certificate. So you can simple ignore this warning.
+        </p><p><img alt="8021X ANDROID 9.png" src="andriod/600px-8021X_ANDROID_9.png" width="600" height="1067" srcset="/wiki/upload/thumb/1/13/8021X_ANDROID_9.png/900px-8021X_ANDROID_9.png 1.5x, /wiki/upload/1/13/8021X_ANDROID_9.png 2x" /></a>
+        </p>
+        <h3><span class="mw-headline" id="Connecting_to_WiFi"></span>Connecting to WiFi</h3>
+        <p>Connect to the Wireless SSID: wifi@iiith
+        </p><p><img alt="8021X ANDROID 10.png" src="andriod/600px-8021X_ANDROID_10.png" width="600" height="1067" srcset="/wiki/upload/thumb/8/8f/8021X_ANDROID_10.png/900px-8021X_ANDROID_10.png 1.5x, /wiki/upload/8/8f/8021X_ANDROID_10.png 2x" /></a>
+        </p><p>Make sure the EAP method is PEAP. If Phase2 auth is none, then the server automatically sets it for you. Otherwise you can select "MSCHAPv2". In the CA Certificate field, select the certificate which you installed above.
+        </p><p><img alt="8021X ANDROID 11.png" src="andriod/600px-8021X_ANDROID_11.png" width="600" height="1067" srcset="/wiki/upload/thumb/e/e4/8021X_ANDROID_11.png/900px-8021X_ANDROID_11.png 1.5x, /wiki/upload/e/e4/8021X_ANDROID_11.png 2x" /></a>
+        </p><p>Scroll down, enter you 802.1X credentials then click OK and you are good to go!
+        </p><p><img alt="8021X ANDROID 12.png" src="andriod/600px-8021X_ANDROID_12.png" width="600" height="1067" srcset="/wiki/upload/thumb/3/36/8021X_ANDROID_12.png/900px-8021X_ANDROID_12.png 1.5x, /wiki/upload/3/36/8021X_ANDROID_12.png 2x" /></a>
+        </p>   
+</div>
+</div>
+</div>
+
+<div class="copy_right_footer">
+    Developed by IIIT-H
+  </div>
+</body>
+</html>

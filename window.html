@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Student Template</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&family=Playpen+Sans:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+ 
+</head>
+<body style="background-color: white;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(43, 57, 78);">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#"><img src="images/iiit_logo_white.png" style="width:150px;height:80px;"></a>
+    <div class="collapse navbar-collapse text-center" id="myNavbar">
+        <ul class="navbar-nav menu mx-auto text-align:left">
+            <li class="nav-item"><a id="about-link" class="nav-link" style=" color:white;" href="index.html" >Faculty</a></li>
+            <li class="nav-item"><a id="research-link" class="nav-link" style=" color:white;" href="staff.html" >Staff</a></li>
+            <li class="nav-item"><a id="event-link" class="nav-link" style=" color:white;" href="student.html">Student</a></li>
+            <li class="nav-item"><a id="event-link" class="nav-link" style=" color:white;" href="student.html">policies</a></li>
+            <li class="nav-item"><a id="teaching-link" class="nav-link" style=" color:white;" href="#contact.html" >Contact</a></li>
+            <!--<li class="nav-item"><a id="talks-link" class="nav-link" href="#talks" >Moddle(LMS)</a></li>-->
+        </ul>
+            
+    </div>
+</nav>
+
+<div class="container">
+    <div class="content-container" style="margin-bottom:20px;margin:20px;">     
+<h2><span class="mw-headline" id="Setting_up_802.1X_for_Wireless_on_Windows_7.2F8.2F10"></span>Setting up 802.1X for Wireless on Windows 7/8/10</h2>
+<p>Contributed By: <a rel="nofollow" class="click-here" href="mailto:nehal.wani@research.iiit.ac.in">Nehal J Wani</a>
+</p>
+<h3><span class="mw-headline" id="Installing_the_CA_Cert"></span>Installing the CA Cert</h3>
+<p>Download the CA certificate file from: <a rel="nofollow" class="click-here" href="http://radius.iiit.ac.in/IIIT-H_RADIUS_CA.der">http://radius.iiit.ac.in/IIIT-H_RADIUS_CA.der</a>
+</p><p><img alt="WINDOWS 8021X 1.png" src="windows/w1.png" width="602" height="364" /></a>
+</p><p>Select "Open With" and click on "OK"
+</p><p><img alt="WINDOWS 8021X 2.png" src="windows/w2.png" width="438" height="313" /></a>
+</p><p>Once the download finishes, click on "Open"
+</p><p><img alt="WINDOWS 8021X 3.png" src="windows/w3.png" width="409" height="295" /></a>
+</p><p>The certificate is not trusted. Click on "Install Certificate"
+</p><p><img alt="WINDOWS 8021X 4.png" src="windows/w4.png" width="408" height="514" /></a>
+</p><p>The "Certificate Import Wizard" will open up. Click on "Next".
+</p><p><img alt="WINDOWS 8021X 5.png" src="windows/w5.png" width="506" height="459" /></a>
+</p><p>Select "Place all certificates in the following store" and then click on "Browse".
+</p><p><img alt="WINDOWS 8021X 6.png" src="windows/w6.png" width="504" height="459" /></a>
+</p><p>Select "Trusted Root Certificate Authorities", then click on "OK".
+</p><p><img alt="WINDOWS 8021X 7.png" src="windows/w7.png" width="508" height="462" /></a>
+</p><p>The certificate store should now point to "Trusted Root Certificate Authorities". Click on "Next".
+</p><p><img alt="WINDOWS 8021X 8.png" src="windows/w8.png" width="504" height="462" /></a>
+</p><p>Click on "Finish".
+</p><p><img alt="WINDOWS 8021X 9.png" src="windows/w9.png" width="508" height="462" /></a>
+</p><p>A security warning will be displayed. Match the fingerprint with the one shown below and then click on "Yes".
+</p><p><img alt="WINDOWS 8021X 10.png" src="windows/w10.png" width="489" height="404" /></a>
+</p><p>A dialog will be displayed stating "The import was successful". Click on "OK".
+</p><p><img alt="WINDOWS 8021X 11.png" src="windows/w11.png" width="254" height="167" /></a>
+</p><p>Now, if you open the DER file again, it should show that the certificate is trusted.
+</p><p><img alt="WINDOWS 8021X 12.png" src="windows/w12.png" width="411" height="512" /></a>
+</p>
+<h3><span class="mw-headline" id="Connecting_to_WiFi.2FFirst_time_Auth"></span>Connecting to WiFi/First time Auth</h3>
+<p>Connect to the Wireless SSID: wifi@iiith
+</p><p><img alt="WINDOWS 8021X 13.png" src="windows/w13.png" width="277" height="429" /></a>
+</p><p>Enter your 802.1X Credentials.
+</p><p><img alt="WINDOWS 8021X 14.png" src="windows/w14.png" width="438" height="240" /></a>
+</p><p>Windows will throw another security alert. Don't worry, server room doesn't share the private key with anyone else, neither are we using a globally known CA. So, nobody can create a rogue server with the same CA as us. Click on connect.
+</p><p><img alt="WINDOWS 8021X 15.png" src="windows/w15.png" width="459" height="363" /></a>
+</p><p>Done!
+</p><p><img alt="WINDOWS 8021X 16.png" src="windows/w16.png" width="279" height="433" /></a>
+</p>
+    </div>
+</div>    
+<div class="copy_right_footer">
+    Developed by IIIT-H
+  </div>
+    </body>
+</html>

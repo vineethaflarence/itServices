@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <title>Student Template</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Domine&family=Libre+Baskerville:ital@1&family=Playpen+Sans:wght@800&display=swap" rel="stylesheet">
+  <link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="Self Help (en-gb)"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+ 
+</head>
+<body style="background-color: white;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(43, 57, 78);">
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#"><img src="images/iiit_logo_white.png" style="width:150px;height:80px;"></a>
+    <div class="collapse navbar-collapse text-center" id="myNavbar">
+        <ul class="navbar-nav menu mx-auto text-align:left">
+            <li class="nav-item"><a id="about-link" class="nav-link" style=" color:white;" href="index.html" >Faculty</a></li>
+            <li class="nav-item"><a id="research-link" class="nav-link" style=" color:white;" href="staff.html" >Staff</a></li>
+            <li class="nav-item"><a id="event-link" class="nav-link" style=" color:white;" href="student.html">Student</a></li>
+            <li class="nav-item"><a id="event-link" class="nav-link" style=" color:white;" href="student.html">policies</a></li>
+            <li class="nav-item"><a id="teaching-link" class="nav-link" style=" color:white;" href="#contact.html" >Contact</a></li>
+            <!--<li class="nav-item"><a id="talks-link" class="nav-link" href="#talks" >Moddle(LMS)</a></li>-->
+        </ul>
+            
+    </div>
+</nav>
+<div class="container">
+    <div class="content-container" style="margin-bottom:20px;margin:20px;">
+<h2><span class="mw-headline" id="Configure_802.1x_Authentication_based_on_various_operating_systems"></span>Configure 802.1x Authentication based on various operating systems</h2>
+<p>In order to be able to authenticate yourself, you'll need to generate a 802.1x authentication password at <a rel="nofollow"  href="https://passwordreset.iiit.ac.in" class="click-here" >https://passwordreset.iiit.ac.in</a>. Please note that this is just an extra authentication token which you will have to generate to authenticate yourself for using network resources. This is one time only. In case you forget the generated password, you can set it again by visiting the above link. Use your students/research password in the field "Current LDAP password:" and set a new password for network connectivity. Please note that this is not going to affect your current password that you use to log into portals, etc.
+</p><p>The videos below can be downloaded at <a rel="nofollow" class="click-here" href="http://proxy.iiit.ac.in/download/">http://proxy.iiit.ac.in/download/</a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Generating_802.1X_Password"></span>Generating 802.1X Password</h2>
+<p>Visit: <a rel="nofollow" class="click-here" href="http://passwordreset.iiit.ac.in">http://passwordreset.iiit.ac.in</a> and set your 802.1X password. You have to authenticate yourself using your LDAP password (the one which you use at login.iiit.ac.in, research.iiit.ac.in, etc).
+</p><p><img alt="8021X_Password.png" src="8021X_Password.png" width="1060" height="662" />
+</p>
+<h2><span class="mw-headline" id="Intern_students"></span>Intern students</h2>
+<p>They need not to generate anything, the credentials which are created itself used for 802.1x authentication  
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Configure_Ubuntu_for_802.1x_Authentication"></span>Configure Ubuntu for 802.1x Authentication</h2>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/dEDNtJE6ZDc" title="Configure Ubuntu for 802.1x Authentication" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+<ul><li> Right Click on Network icon on the top bar [ If it isn't there then try running "nm-applet" command on terminal.] If it doesn't shows anything then, you might have to install Network Manager Applet or equivalent, refer <a rel="nofollow" class="click-here" href="https://wiki.gnome.org/Projects/NetworkManager">https://wiki.gnome.org/Projects/NetworkManager</a></li>
+<li> Go to Edit Connections.</li>
+<li> In section "Wired" click on "Add" tab.</li>
+<li> Give Connection name as "Hostel Authentication", check the "Connect Automatically" checkbox.</li>
+<li> Click on 802.1 X Security tab, check the checkbox for "Use 802.1X security for this connection.</li>
+<li> Select Authentication type as PEAP (MSCHAPv2) and then enter your complete students/research email address and use the password generated using the portal given above.</li>
+<li> For CA Certificate, either choose 'None' (Not recommended), or download <a rel="nofollow" class="click-here" href="http://self-help.iiit.ac.in/download/radius/IIIT-H_RADIUS_CA.pem">http://self-help.iiit.ac.in/download/radius/IIIT-H_RADIUS_CA.pem</a> and choose the location where it is kept (Highly Recommended).</li>
+<li> Click on Apply and then select this newly created connection by clicking once again on Network icon at top.</li>
+<li> And you are done.</li></ul>
+<p>The solution for the bug <a rel="nofollow" class="click-here" href="https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1104476">https://bugs.launchpad.net/ubuntu/+source/network-manager/+bug/1104476</a> has been presented as part of the video above.
+</p>
+<h2><span class="mw-headline" id="Configure_Fedora_for_802.1x_Authentication"></span>Configure Fedora for 802.1x Authentication</h2>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/7Ss8vmUOGUc" title="Configure Fedora for 802.1x Authentication" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p><p>In case your are using Gnome3,
+</p>
+<ul><li> Go to Network Settings</li>
+<li> Go to Wired connections, click add profile</li>
+<li> In the security tab, enable 802.1x and then follow from Step 6 onwards as mentioned above.</li></ul>
+<p>If, every time every time you boot up, and it is asks for the 802.1x password, one can do the following:
+</p>
+<ul><li> Go to /etc/sysconfig/network-scripts/</li>
+<li> Open the file `ifcfg-&lt;interface name&gt;`. The &lt;interface-name&gt; for the wired connection is mostly of the form 'enp5s0' or 'enp10s0'</li>
+<li> In that file, remove the line `IEEE_8021X_PASSWORD_FLAGS=user` and add the line `IEEE_802.1X_PASSWORD=&lt;your password&gt;`. The password should be without quotes.</li>
+<li> Reboot.</li></ul>
+<p>This method has been tested on Fedora22
+</p>
+<h2><span class="mw-headline" id="Configure_Windows_for_802.1x_Authentication"></span>Configure Windows for 802.1x Authentication</h2>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/baP2B9oBxU8" title="Configure Windows for 802.1X Authentication" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+<ul><li> Open explorer, right click on computer and click 'Manage'</li>
+<li> Navigate to 'Services and Applications', open 'Services'</li>
+<li> Open Wired AutoConfig, set the startup type to 'Automatic' and click on 'Start'</li>
+<li> Go to 'Network and Sharing Center' and click on 'Change adapter settings'.</li>
+<li> For your network adapter, right click, go to properties.</li>
+<li> Select the tab Authentication. Make sure 'Enable IEEE 802.1X authentication' is ticked. network authentication method should be 'Microsoft: Protected PEAP'</li>
+<li> Click on settings. Make sure 'Validate server certificate' is either no ticked (Not recommended) or download and install <a rel="nofollow" class="click-here" href="http://self-help.iiit.ac.in/download/radius/IIIT-H_RADIUS_CA.pem" >http://self-help.iiit.ac.in/download/radius/IIIT-H_RADIUS_CA.pem</a> and choose "IIIT-H Radius CA" (Highly Recommended).. </li>
+<li> The authentication mechanism should be 'EAP-MSCHAPv2'. Click on Configure and make sure that 'Automatically use my Windows logon name and password' is not ticked. Click OK.</li>
+<li> Go to 'Additional Settings', under 'Specify authentication mode' select user authentication.</li>
+<li> This is optional. Click on Save Credentials and enter your email id and LAN authentication password.</li>
+<li> Click OK.</li>
+<li> Disable and re-enable your Network Adapter.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Configure_Mac_OS_X_for_802.1x_Authentication"></span>Configure Mac OS X for 802.1x Authentication</h2>
+<p>Mac OS X should automatically detect 802.1x and display pop up window asking username and password. Just use your IIIT email and **802.1x password** for the same.
+</p><p>If for some reasons (like you are in KCIS) it don't show you pop up box, then use following steps:
+</p>
+<ul><li> Download the configuration from <a rel="nofollow" class="click-here" href="https://self-help.iiit.ac.in/download/IIIT.mobileconfig">here</a>.</li>
+<li> Open the config in vim/emacs (I prefer vim&#160;:P ) and update your email and password accordingly and Save.</li>
+<li> Double click to run/import it. In the popup (as shown below) select Continue and then Install.</li></ul>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/index.php/File:Import_mobileconfig.png" class="image"><img alt="Import mobileconfig.png" src="300px-Import_mobileconfig.png" width="300" height="196" class="thumbimage" srcset="/wiki/upload/thumb/8/86/Import_mobileconfig.png/450px-Import_mobileconfig.png 1.5x, /wiki/upload/thumb/8/86/Import_mobileconfig.png/600px-Import_mobileconfig.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/index.php/File:Import_mobileconfig.png" class="internal" title="Enlarge"></a></div></div></div></div>
+<ul><li> Open Network Settings -&gt; Ethernet -&gt; Advanced and validate that you now have 802.1x config named "Wi-Fi" in list.</li>
+<li> You should have window like shown below, click on "Connect" next to 802.1x.</li></ul>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;">
+    <img alt="Connect button for 802.1x OS X.png" src="300px-Connect_button_for_802.1x_OS_X.png" class="internal" title="Enlarge">
+</div>
+</div>
+<ul>
+    <li> Once connected it should show "Authentication with EAP-PEAP (MSCHAPv2)".</li>
+    <li> Now again click Advanced and "Renew Lease". Enjoy!</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div class="copy_right_footer">
+    Developed by IIIT-H
+  </div>
+</body>
+</html>
